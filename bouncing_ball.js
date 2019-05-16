@@ -16,7 +16,7 @@
 // The ball can only be seen if the height of the rebounding ball is stricty greater than the window parameter.
 
 function bouncingBall(h, bounce, window) {
-    if (h <= 0 || bounce <= 0 || bounce >= 1 || window > h) {
+    if (h <= 0 || bounce <= 0 || bounce >= 1 || window > h || window === h) {
         return -1;
     }
 
