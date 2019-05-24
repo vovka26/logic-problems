@@ -34,6 +34,17 @@ class HashTable {
         return undefined;
       }
     }
+    keys(){
+        const keysArray = [];
+        for(let array of this.data){
+          if(array){
+            for(let subArr of array){
+              keysArray.push(subArr[0])
+            }
+          }
+        }
+        return keysArray;
+      }
   }
   
 //   const myHashTable = new HashTable(50);
